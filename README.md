@@ -1,4 +1,4 @@
-# Obtaining Geometric Properties of Nanoclusters
+# Obtaining Geometric Properties of Nanoclusters and Other Chemical Systems
 
 [![Citation](https://img.shields.io/badge/Citation-click%20here-green.svg)](https://dx.doi.org/10.1021/acs.jcim.0c01128)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/GardenGroupUO/Cluster_Properties)](https://github.com/GardenGroupUO/Cluster_Properties)
@@ -11,9 +11,9 @@ Group page: https://blogs.otago.ac.nz/annagarden/
 
 Page to cite with work from: *XXX*; XXX; 
 
-## What is his Program?
+## What is this Program?
 
-This program, called Cluster_Properties,  is designed to provide information about the geometric properties of individual nanoclusters, including the radial distribution function and the number of neighbours surrounding each atom within the nanocluster. This program utilises modules from the Atomic Simulation Environment (ASE) and As Soon As Possible (ASAP3) packages. 
+This program, called Cluster_Properties, is designed to provide information about the geometric properties of individual nanoclusters, including the radial distribution function and the number of neighbours surrounding each atom within the nanocluster. This program utilises modules from the Atomic Simulation Environment (ASE) and As Soon As Possible (ASAP3) packages. 
 
 ## Installation
 
@@ -37,7 +37,7 @@ export PYTHONPATH="$PATH_TO_Cluster_Properties":$PYTHONPATH
 
 This will allow your computer to run this program through your terminal on python3.
 
-## How to run Cluster_Properties
+## How to Run Cluster_Properties
 
 An example of the script used to run this program is given below, called ``run_cluster_properties.py``.
 
@@ -55,6 +55,11 @@ xlim_CN  = None
 Cluster_Properties_Program(rdf_max_dist, no_of_bins, colours, r_cut, xlim_RDF=xlim_RDF, xlim_CN=xlim_CN)
 ```
 
+This program will look through all subdirectories from where you place the ``run_cluster_properties.py`` program and create radial distribution function plots and number of neighbour plots for each nanoclusters and chemical systems that is found as either a XYZ file (ending with ``.xyz``) or ASE trajectory file (ending with ``.traj``). Examples of the plots that are created are shown below:
+
+![A example radial distribution function plot of a CuPd nanocluster.](hhttps://github.com/GardenGroupUO/Cluster_Properties/blob/Images/cu3pd35_RDF.png?raw=true)
+
+![A bar plot of the number of neighbour for each atom within a CuPd nanocluster.](hhttps://github.com/GardenGroupUO/Cluster_Properties/blob/Images/cu3pd35_No_of_Neighbours.png?raw=true)
 
 ## About
 

@@ -35,7 +35,6 @@ class Cluster_Properties_Program:
 					root_modified[1] += '_cluster_properties'
 					root_modified = os.getcwd()+'/'+'/'.join(root_modified)
 					self.run_upon_single_cluster(file, root, root_modified)
-					import pdb; pdb.set_trace()
 		print('====================================================')
 
 	def run_upon_single_cluster(self, file, root, save_to):
@@ -51,6 +50,7 @@ class Cluster_Properties_Program:
 			filename = file.replace('.traj','')
 		else:
 			exit('Weird')
+		save_to += '/'+filename
 		self.make_folder(save_to)
 		self.get_RDF(cluster, filename, save_to)
 		self.get_nearest_neighbours(cluster, filename, save_to)
