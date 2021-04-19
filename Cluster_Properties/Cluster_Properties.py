@@ -11,14 +11,14 @@ import matplotlib.pyplot as plt
 from ase.neighborlist import NeighborList
 
 class Cluster_Properties_Program:
-	def __init__(self, RDF_max_dist, no_of_bins, colours, r_cut, xlim_RDF=None, xlim_CN=None):
-		self.RDF_max_dist = RDF_max_dist
+	def __init__(self, rdf_max_dist, no_of_bins, colours, r_cut, xlim_RDF=None, xlim_CN=None):
+		self.rdf_max_dist = rdf_max_dist
 		self.no_of_bins = no_of_bins
 		self.colours = colours
 		self.format_colour_scheme()
 		self.r_cut = r_cut
 		if xlim_RDF == None:
-			self.xlim_RDF = (0,self.RDF_max_dist)
+			self.xlim_RDF = (0,self.rdf_max_dist)
 		else:
 			self.xlim_RDF = xlim_RDF
 		self.xlim_CN = xlim_CN
@@ -83,7 +83,7 @@ class Cluster_Properties_Program:
 				element_pairs.append((element1,element2))
 
 		RDF_results = {}
-		RDFobj = RadialDistributionFunction(cluster, self.RDF_max_dist, self.no_of_bins, verbose=True)
+		RDFobj = RadialDistributionFunction(cluster, self.rdf_max_dist, self.no_of_bins, verbose=True)
 		for element_pair in element_pairs:
 			rdf_pair = RDFobj.get_rdf(elements=element_pair)
 			element_pair = tuple(sorted(element_pair))
@@ -93,7 +93,7 @@ class Cluster_Properties_Program:
 				RDF_results[element_pair] += rdf_pair
 
 		#plotting
-		x_axis = self.RDF_max_dist * np.linspace(0,1,self.no_of_bins,endpoint=True)
+		x_axis = self.rdf_max_dist * np.linspace(0,1,self.no_of_bins,endpoint=True)
 		for element_pair, rdf_pair in sorted(RDF_results.items()):
 			element_pair_name = ', '.join(tuple(chemical_symbols[element] for element in element_pair))
 			plt.plot(x_axis, rdf_pair, self.colours[element_pair], label=element_pair_name)

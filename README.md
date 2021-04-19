@@ -40,18 +40,19 @@ This will allow your computer to run this program through your terminal on pytho
 ## How to run Cluster_Properties
 
 An example of the script used to run this program is given below, called ``run_cluster_properties.py``.
+
 ```python
 from Cluster_Properties import Cluster_Properties_Program
 
-RDF_max_dist = 15.0
+rdf_max_dist = 15.0
 no_of_bins = 500
-colours = {'Cu': 'y', ('Pd'): 'b', ('Cu','Pd'): 'm'}
+colours = {'Cu': 'y', 'Pd': 'b', ('Cu','Pd'): 'm'}
 r_cut = 2.0
 
 xlim_RDF = (1.8,8.2)
 xlim_CN  = None
 
-Cluster_Properties_Program(RDF_max_dist, no_of_bins, colours, r_cut, xlim_RDF=xlim_RDF, xlim_CN=xlim_CN)
+Cluster_Properties_Program(rdf_max_dist, no_of_bins, colours, r_cut, xlim_RDF=xlim_RDF, xlim_CN=xlim_CN)
 ```
 
 
