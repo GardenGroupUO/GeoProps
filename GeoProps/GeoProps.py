@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 from ase.neighborlist import NeighborList
 
-class Cluster_Properties_Program:
+class GeoProps_Program:
 	def __init__(self, rdf_max_dist, no_of_bins, colours, r_cut, xlim_RDF=None, xlim_CN=None):
 		self.rdf_max_dist = rdf_max_dist
 		self.no_of_bins = no_of_bins
@@ -32,7 +32,7 @@ class Cluster_Properties_Program:
 			for file in files:
 				if file.endswith('.xyz') or file.endswith('.traj'):
 					root_modified = root.split('/')
-					root_modified[1] += '_cluster_properties'
+					root_modified[1] += '_GeoProps'
 					root_modified = os.getcwd()+'/'+'/'.join(root_modified)
 					self.run_upon_single_cluster(file, root, root_modified)
 		print('====================================================')

@@ -1,6 +1,6 @@
-# The information about the Cluster_Properties program
+# The information about the GeoProps program
 
-__name__    = 'The Cluster_Properties Program'
+__name__    = 'The GeoProps Program'
 __version__ = '1.0'
 __author__  = 'Geoffrey Weal, Caitlin Casey-Stevens and Dr. Anna Garden'
 
@@ -9,11 +9,11 @@ if sys.version_info[0] == 2:
 	toString = ''
 	toString += '\n'
 	toString += '================================================'+'\n'
-	toString += 'This is the Cluster_Properties Program'+'\n'
+	toString += 'This is the GeoProps Program'+'\n'
 	toString += 'Version: '+str(__version__)+'\n'
 	toString += '\n'
-	toString += 'The Cluster_Properties program requires Python3. You are attempting to execute this program in Python2.'+'\n'
-	toString += 'Make sure you are running the Cluster_Properties program in Python3 and try again'+'\n'
+	toString += 'The GeoProps program requires Python3. You are attempting to execute this program in Python2.'+'\n'
+	toString += 'Make sure you are running the GeoProps program in Python3 and try again'+'\n'
 	toString += 'This program will exit before beginning'+'\n'
 	toString += '================================================'+'\n'
 	raise ImportError(toString)
@@ -21,10 +21,10 @@ if sys.version_info[1] < 4:
 	toString = ''
 	toString += '\n'
 	toString += '================================================'+'\n'
-	toString += 'This is the Cluster_Properties Program'+'\n'
+	toString += 'This is the GeoProps Program'+'\n'
 	toString += 'Version: '+str(__version__)+'\n'
 	toString += '\n'
-	toString += 'The Cluster_Properties program requires Python 3.4 or greater.'+'\n'
+	toString += 'The GeoProps program requires Python 3.4 or greater.'+'\n'
 	toString += 'You are using Python '+str('.'.join(sys.version_info))
 	toString += '\n'
 	toString += 'Use a version of Python 3 that is greater or equal to Python 3.4.\n'
@@ -45,12 +45,12 @@ if not found:
 	toString = ''
 	toString += '\n'
 	toString += '================================================'+'\n'
-	toString += 'This is the Cluster_Properties Program'+'\n'
+	toString += 'This is the GeoProps Program'+'\n'
 	toString += 'Version: '+str(__version__)+'\n'
 	toString += '\n'
-	toString += 'The Cluster_Properties program requires ASE.'+'\n'
+	toString += 'The GeoProps program requires ASE.'+'\n'
 	toString += '\n'
-	toString += 'Install ASE through pip by following the instruction in https://github.com/GardenGroupUO/Cluster_Properties'+'\n'
+	toString += 'Install ASE through pip by following the instruction in https://github.com/GardenGroupUO/GeoProps'+'\n'
 	toString += 'These instructions will ask you to install ase by typing the following into your terminal\n'
 	toString += 'pip3 install --user --upgrade ase\n'
 	toString += '\n'
@@ -67,13 +67,13 @@ if version.parse(ase.__version__) < version.parse(ase_version_minimum):
 	toString = ''
 	toString += '\n'
 	toString += '================================================'+'\n'
-	toString += 'This is the Cluster_Properties Program'+'\n'
+	toString += 'This is the GeoProps Program'+'\n'
 	toString += 'Version: '+str(__version__)+'\n'
 	toString += '\n'
-	toString += 'The Cluster_Properties program requires ASE greater than or equal to '+str(ase_version_minimum)+'.'+'\n'
+	toString += 'The GeoProps program requires ASE greater than or equal to '+str(ase_version_minimum)+'.'+'\n'
 	toString += 'The current version of ASE you are using is '+str(ase.__version__)+'.'+'\n'
 	toString += '\n'
-	toString += 'Install ASE through pip by following the instruction in https://github.com/GardenGroupUO/Cluster_Properties'+'\n'
+	toString += 'Install ASE through pip by following the instruction in https://github.com/GardenGroupUO/GeoProps'+'\n'
 	toString += 'These instructions will ask you to install ase by typing the following into your terminal\n'
 	toString += 'pip3 install --user --upgrade ase\n'
 	toString += '\n'
@@ -88,12 +88,12 @@ if not found:
 	toString = ''
 	toString += '\n'
 	toString += '================================================'+'\n'
-	toString += 'This is the Cluster_Properties Program'+'\n'
+	toString += 'This is the GeoProps Program'+'\n'
 	toString += 'Version: '+str(__version__)+'\n'
 	toString += '\n'
-	toString += 'The Cluster_Properties program requires ASAP3.'+'\n'
+	toString += 'The GeoProps program requires ASAP3.'+'\n'
 	toString += '\n'
-	toString += 'Install ASAP3 through pip by following the instruction in https://github.com/GardenGroupUO/Cluster_Properties'+'\n'
+	toString += 'Install ASAP3 through pip by following the instruction in https://github.com/GardenGroupUO/GeoProps'+'\n'
 	toString += 'These instructions will ask you to install asap3 by typing the following into your terminal\n'
 	toString += 'pip3 install --user --upgrade asap3\n'
 	toString += '\n'
@@ -110,13 +110,13 @@ if version.parse(ase.__version__) < version.parse(ase_version_minimum):
 	toString = ''
 	toString += '\n'
 	toString += '================================================'+'\n'
-	toString += 'This is the Cluster_Properties Program'+'\n'
+	toString += 'This is the GeoProps Program'+'\n'
 	toString += 'Version: '+str(__version__)+'\n'
 	toString += '\n'
-	toString += 'The Cluster_Properties program requires ASAP3 greater than or equal to '+str(ase_version_minimum)+'.'+'\n'
+	toString += 'The GeoProps program requires ASAP3 greater than or equal to '+str(ase_version_minimum)+'.'+'\n'
 	toString += 'The current version of ASAP3 you are using is '+str(ase.__version__)+'.'+'\n'
 	toString += '\n'
-	toString += 'Install ASAP3 through pip by following the instruction in https://github.com/GardenGroupUO/Cluster_Properties'+'\n'
+	toString += 'Install ASAP3 through pip by following the instruction in https://github.com/GardenGroupUO/GeoProps'+'\n'
 	toString += 'These instructions will ask you to install ase by typing the following into your terminal\n'
 	toString += 'pip3 install --user --upgrade ase\n'
 	toString += '\n'
@@ -128,11 +128,11 @@ if version.parse(ase.__version__) < version.parse(ase_version_minimum):
 
 __author_email__ = 'anna.garden@otago.ac.nz'
 __license__ = 'GNU AFFERO GENERAL PUBLIC LICENSE'
-__url__ = 'https://github.com/GardenGroupUO/Cluster_Properties'
-__doc__ = 'See https://github.com/GardenGroupUO/Cluster_Properties for the documentation on this program'
+__url__ = 'https://github.com/GardenGroupUO/GeoProps'
+__doc__ = 'See https://github.com/GardenGroupUO/GeoProps for the documentation on this program'
 
-from Cluster_Properties.Cluster_Properties import Cluster_Properties_Program
-__all__ = ['Cluster_Properties_Program'] 
+from GeoProps.GeoProps import GeoProps_Program
+__all__ = ['GeoProps_Program'] 
 
 # ------------------------------------------------------------------------------------------------------------------------
 
