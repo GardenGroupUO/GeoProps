@@ -58,9 +58,9 @@ GeoProps_Program(rdf_max_dist, no_of_bins, colours, r_cut, xlim_RDF=xlim_RDF, xl
 
 This program will look through all subdirectories from where you place the ``run_GeoProps.py`` program and create radial distribution function plots and number of neighbour plots for each nanoclusters and chemical systems that is found as either a XYZ file (ending with ``.xyz``) or ASE trajectory file (ending with ``.traj``). Examples of the plots that are created are shown below:
 
-![A example radial distribution function plot of a CuPd nanocluster.](https://github.com/GardenGroupUO/GeoProps/blob/main/Images/cu3pd35_RDF.png?raw=true)
+![A example radial distribution function plot of a CuPd nanocluster.](https://github.com/GardenGroupUO/GeoProps/blob/main/Images/cu10pd28_RDF.png?raw=true)
 
-![A bar plot of the number of neighbour for each atom within a CuPd nanocluster.](https://github.com/GardenGroupUO/GeoProps/blob/main/Images/cu3pd35_No_of_Neighbours.png?raw=true)
+![A bar plot of the number of neighbour for each atom within a CuPd nanocluster.](https://github.com/GardenGroupUO/GeoProps/blob/main/Images/cu10pd28_No_of_Neighbours.png?raw=true)
 
 ## About
 
