@@ -4,6 +4,12 @@ __name__    = 'The GeoProps Program'
 __version__ = '1.1'
 __author__  = 'Geoffrey Weal, Caitlin Casey-Stevens and Dr. Anna Garden'
 
+print('######################################################')
+print('')
+print('Running GeoProps: version '+str(__version__))
+print('')
+print('######################################################')
+
 import sys
 if sys.version_info[0] == 2:
 	toString = ''
