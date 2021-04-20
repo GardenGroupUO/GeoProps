@@ -62,13 +62,15 @@ When you execute this program by running ``python3 run_GeoProps.py`` in the term
 
 Examples of the plots that are created are shown below. These include a radial distribution function plot, and number of neighbours bar plot, a text document describing all the number of neighbours found in your cluster with the associated atoms (these can be seen by opening up the xyz file, where the tags describe the index for each atom. These can be coloured by the ASE GUI), and a text document describing all the bonds that are found in your nanocluster/chemical system.
 
-A example radial distribution function plot of a Cu<sub>10<\sub>Pd<sub>28<\sub> nanocluster: 
+A example radial distribution function plot of a Cu<sub>10</sub>Pd<sub>28</sub> nanocluster: 
 
 ![A example radial distribution function plot of a CuPd nanocluster.](https://github.com/GardenGroupUO/GeoProps/blob/main/Images/cu10pd28_RDF.png?raw=true)
 
-A bar plot of the number of neighbour for each atom within a Cu<sub>10<\sub>Pd<sub>28<\sub> nanocluster: 
+A bar plot of the number of neighbour for each atom within a Cu<sub>10</sub>Pd<sub>28</sub> nanocluster: 
 
 ![A bar plot of the number of neighbour for each atom within a CuPd nanocluster.](https://github.com/GardenGroupUO/GeoProps/blob/main/Images/cu10pd28_No_of_Neighbours.png?raw=true)
+
+A text document describing the number of neighbour for each atom within a Cu<sub>10</sub>Pd<sub>28</sub> nanocluster: 
 
 ```
 The following file contains information about the number of neighbours that each atom contains in the cluster, as well as the atom indices of atoms in the cluster with those number of neighbours.
@@ -96,6 +98,8 @@ No of neighbours	|	Atom Indices in Cluster/Chemical System
 		14			|			11, 15, 29, 31
 
 ```
+
+A text document describing the types of bonds that are found within a Cu<sub>10</sub>Pd<sub>28</sub> nanocluster: 
 
 ```
 This text file contains all the information about the number of bonds in this cluster/chemical system.
