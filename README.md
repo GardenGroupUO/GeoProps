@@ -1,5 +1,6 @@
 # GeoProps: Obtaining Geometric Properties of Nanoclusters and Other Chemical Systems
 
+[![PyPI - Python Version](https://img.shields.io/badge/Python-3.6%20%7C%203.7%20%7C%203.8%20%7C%203.9-blue)](https://docs.python.org/3/)
 [![Citation](https://img.shields.io/badge/Citation-click%20here-green.svg)](https://dx.doi.org/10.1021/acs.jcim.0c01128)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/GardenGroupUO/GeoProps)](https://github.com/GardenGroupUO/GeoProps)
 [![Licence](https://img.shields.io/github/license/GardenGroupUO/GeoProps)](https://www.gnu.org/licenses/agpl-3.0.en.html)
@@ -124,7 +125,7 @@ Bond lengths
 
 <div align="center">
 
-| Python        | [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/GeoProps)](https://docs.python.org/3/) | 
+| Python        | [![PyPI - Python Version](https://img.shields.io/badge/Python-3.6%20%7C%203.7%20%7C%203.8%20%7C%203.9-blue)](https://docs.python.org/3/) | 
 |:-------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | Repositories  | [![GitHub release (latest by date)](https://img.shields.io/github/v/release/GardenGroupUO/GeoProps)](https://github.com/GardenGroupUO/GeoProps) |
 | Documentation | [![GitHub release (latest by date)](https://img.shields.io/github/v/release/GardenGroupUO/GeoProps)](https://github.com/GardenGroupUO/GeoProps) | 
