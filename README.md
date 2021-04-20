@@ -47,7 +47,8 @@ from GeoProps import GeoProps_Program
 rdf_max_dist = 15.0
 no_of_bins = 500
 colours = {'Cu': 'y', 'Pd': 'b', ('Cu','Pd'): 'm'}
-r_cut = 2.0
+
+r_cut = 2.9
 
 xlim_RDF = (1.8,8.2)
 xlim_CN  = None
