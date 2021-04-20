@@ -64,11 +64,15 @@ Examples of the plots that are created are shown below. These include a radial d
 
 A example radial distribution function plot of a Cu<sub>10</sub>Pd<sub>28</sub> nanocluster: 
 
-![A example radial distribution function plot of a CuPd nanocluster.](https://github.com/GardenGroupUO/GeoProps/blob/main/Images/cu10pd28_RDF.png?raw=true)
+<p align="center">
+	<img src="https://github.com/GardenGroupUO/GeoProps/blob/main/Images/cu10pd28_RDF.png">
+</p>
 
 A bar plot of the number of neighbour for each atom within a Cu<sub>10</sub>Pd<sub>28</sub> nanocluster: 
 
-![A bar plot of the number of neighbour for each atom within a CuPd nanocluster.](https://github.com/GardenGroupUO/GeoProps/blob/main/Images/cu10pd28_No_of_Neighbours.png?raw=true)
+<p align="center">
+	<img src="https://github.com/GardenGroupUO/GeoProps/blob/main/Images/cu10pd28_No_of_Neighbours.png">
+</p>
 
 A text document describing the number of neighbour for each atom within a Cu<sub>10</sub>Pd<sub>28</sub> nanocluster: 
 
