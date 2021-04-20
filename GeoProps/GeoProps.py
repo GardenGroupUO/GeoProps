@@ -28,6 +28,9 @@ class GeoProps_Program:
 		self.run()
 
 	def format_colour_scheme(self):
+
+		self.colours_bar_plots = {element_pair: colour for element_pair, colour in self.colours.items() if isinstance(element_pair,str)}
+
 		for element_pair, colour in list(self.colours.items()):
 			if isinstance(element_pair,str):
 				del self.colours[element_pair]
@@ -178,7 +181,7 @@ class GeoProps_Program:
 			element = elements[index]
 			y_axis = all_elements_number_of_neighbours_list[element]
 			all_y_axis = [y1+y2 for y1,y2 in zip(all_y_axis,y_axis)]
-			plt.bar(x_axis, all_y_axis, width=0.8, bottom=None, align='center', label=element, zorder=(no_of_elements-index))
+			plt.bar(x_axis, all_y_axis, width=0.8, bottom=None, align='center', color=self.colours_bar_plots[element], label=element, zorder=(no_of_elements-index))
 		plt.ylim(0,max(all_y_axis)*1.05)
 		'''
 		yint = []
