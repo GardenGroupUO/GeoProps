@@ -121,6 +121,12 @@ Bond lengths
 
 ```
 
+## Other useful programs in GeoProps
+
+In a folder called ``Useful_Subsidiary_Programs`` are some other useful scripts that have been written when developing this program. 
+
+* ``make_pages_of_plots.py``: This script allows you to turn a number of plots into pages that contain 12 plots each on them.
+
 ## About
 
 <div align="center">
