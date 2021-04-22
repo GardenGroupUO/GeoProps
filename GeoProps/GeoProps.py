@@ -18,7 +18,7 @@ class GeoProps_Program:
 		self.colours = colours
 		self.format_colour_scheme()
 		self.r_cut = r_cut
-		if xlim_RDF == None:
+		if xlim_RDF is None:
 			self.xlim_RDF = (0,self.rdf_max_dist)
 		else:
 			self.xlim_RDF = xlim_RDF
@@ -151,7 +151,7 @@ class GeoProps_Program:
 			import pdb; pdb.set_trace()
 			exit()
 
-		if self.xlim_CN == None:
+		if self.xlim_CN is None:
 			max_CN_to_plot = max(all_number_of_neighbours.keys())
 		else:
 			max_CN_to_plot = self.xlim_CN
