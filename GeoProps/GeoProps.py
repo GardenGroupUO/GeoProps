@@ -80,7 +80,7 @@ class GeoProps_Program:
 
 	def read_in_chemical_system(self, path_to_xyz_file):
 		cluster = read(path_to_xyz_file)
-		#cluster.set_cell([50,50,50])
+		cluster.set_cell([50,50,50])
 		cluster.set_pbc(False)
 		return cluster
 
