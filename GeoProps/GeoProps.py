@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 from GeoProps.No_Of_Neighbours import No_Of_Neighbours
 
 class GeoProps_Program:
-	def __init__(self, rdf_max_dist, no_of_bins, colours, r_cut, xlim_RDF=None, xlim_CN=None):
+	def __init__(self, rdf_max_dist, no_of_bins, colours, r_cut, xlim_RDF=None, xlim_CN=None, suffix_name=''):
 		self.rdf_max_dist = rdf_max_dist
 		self.no_of_bins = no_of_bins
 		self.colours = colours
@@ -25,6 +25,7 @@ class GeoProps_Program:
 		self.xlim_CN = xlim_CN
 
 		self.modified_name_suffix = '_GeoProps'
+		self.suffix_name = suffix_name
 		self.run()
 
 	def format_colour_scheme(self):
@@ -53,15 +54,16 @@ class GeoProps_Program:
 			for file in files:
 				if file.endswith('.xyz') or file.endswith('.traj'):
 					root_modified = root.split('/')
-					root_modified[1] += self.modified_name_suffix
+					root_modified[1] += self.modified_name_suffix+'_'+self.suffix_name
 					root_modified = os.getcwd()+'/'+'/'.join(root_modified)
+					root_modified = os.path.abspath(root_modified)
 					self.run_upon_single_cluster(file, root, root_modified)
 		print('====================================================')
 
 	def run_upon_single_cluster(self, file, root, save_to):
 		print('====================================================')
 		path_to_xyz_file = root+'/'+file
-		print('Saving cluster properties for '+path_to_xyz_file)
+		print('Saving cluster properties for '+path_to_xyz_file+' to '+save_to)
 		cluster = self.read_in_chemical_system(path_to_xyz_file)
 		if file.endswith('.xyz'):
 			filename = file.replace('.xyz','')
