@@ -120,7 +120,7 @@ class GeoProps_Program:
 			element_pair_name = ', '.join(tuple(chemical_symbols[element] for element in element_pair))
 			#rdf_pair = list(rdf_pair)
 			print(self.colours[element_pair])
-			plt.plot(x_axis, rdf_pair, self.colours[element_pair], label=element_pair_name)
+			plt.plot(x_axis, rdf_pair, color=self.colours[element_pair], label=element_pair_name)
 			
 		plt.xlim(self.xlim_RDF)
 		plt.legend()
