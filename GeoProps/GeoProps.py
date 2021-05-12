@@ -119,6 +119,7 @@ class GeoProps_Program:
 		for element_pair, rdf_pair in sorted(RDF_results.items()):
 			element_pair_name = ', '.join(tuple(chemical_symbols[element] for element in element_pair))
 			#rdf_pair = list(rdf_pair)
+			print(self.colours[element_pair])
 			plt.plot(x_axis, rdf_pair, self.colours[element_pair], label=element_pair_name)
 			
 		plt.xlim(self.xlim_RDF)
