@@ -1,6 +1,6 @@
 import os
 import numpy as np
-#from shutil import copyfile
+import matplotlib.colors as mcolors
 
 from ase.io import read, write
 
@@ -42,6 +42,26 @@ class GeoProps_Program:
 			element1 = atomic_numbers[element1]
 			element2 = atomic_numbers[element2]
 			self.colours[(element1, element2)] = colour
+
+		not_available = []
+		colour_names = list(mcolors.BASE_COLORS.keys()) + list(mcolors.TABLEAU_COLORS.keys()) + list(mcolors.XKCD_COLORS.keys()) + list(mcolors.CSS4_COLORS.keys())
+		for colour in self.colours.values():
+			if isinstance(colour,float) or isinstance(colour,list) or isinstance(colour,tuple) or colour.startswith('#'):
+				continue
+			if not (colour in colour_names):
+				not_available.append(colour)
+		if len(not_available) > 0:
+			print('Error in Geoprops: You have not given a colour that is available in matplotlib or is not in Hexicode or RGB code.')
+			print('The types of colours that are available are given in https://matplotlib.org/stable/gallery/color/named_colors.html')
+			print('You can also include xkcd colours: https://xkcd.com/color/rgb/')
+			print('You can also include as a colour in Hexicode or RGB format, see https://matplotlib.org/stable/tutorials/colors/colors.html')
+			print()
+			print('See https://matplotlib.org/stable/tutorials/colors/colors.html for all the ways that colour can be given in matplotlib')
+			print()
+			print('colours given that are not available in matplotlib: '+str(not_available))
+			print()
+			print('This program will finish without completing')
+			exit()
 
 	def run(self):
 		print('====================================================')
@@ -119,7 +139,6 @@ class GeoProps_Program:
 		for element_pair, rdf_pair in sorted(RDF_results.items()):
 			element_pair_name = ', '.join(tuple(chemical_symbols[element] for element in element_pair))
 			#rdf_pair = list(rdf_pair)
-			print(self.colours[element_pair])
 			plt.plot(x_axis, rdf_pair, color=self.colours[element_pair], label=element_pair_name)
 			
 		plt.xlim(self.xlim_RDF)
