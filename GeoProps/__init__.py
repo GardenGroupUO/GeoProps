@@ -1,7 +1,7 @@
 # The information about the GeoProps program
 
 __name__    = 'The GeoProps Program'
-__version__ = '1.2'
+__version__ = '1.3'
 __author__  = 'Geoffrey Weal, Caitlin Casey-Stevens and Dr. Anna Garden'
 
 print('######################################################')
