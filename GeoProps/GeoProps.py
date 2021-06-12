@@ -66,15 +66,18 @@ class GeoProps_Program:
 	def run(self):
 		print('====================================================')
 		for root, dirs, files in os.walk("."):
-			if len(root.split('/')) <= 2:
+			if len(root.split('/')) <= 1:
 				continue
 			if self.modified_name_suffix in root:
 				continue
 			files.sort()
 			for file in files:
 				if file.endswith('.xyz') or file.endswith('.traj'):
+					print(file)
 					root_modified = root.split('/')
-					root_modified[1] += self.modified_name_suffix+'_'+self.suffix_name
+					root_modified[1] += self.modified_name_suffix
+					if not self.suffix_name == '':
+						root_modified[1] += '_'+self.suffix_name
 					root_modified = os.getcwd()+'/'+'/'.join(root_modified)
 					root_modified = os.path.abspath(root_modified)
 					self.run_upon_single_cluster(file, root, root_modified)

@@ -61,6 +61,8 @@ When you execute this program by running ``python3 run_GeoProps.py`` in the term
 
 ## Output files that are created by GeoProps
 
+Geoprops will search through all the subdirectories that are contained in the same directory as the ``run_GeoProps.py`` python file and make folders of these subdirectories that contain ``GeoProps`` in the name. It will do this one for folders that contain ``.xyz`` or ``.traj`` files. ``GeoProps`` will then work on these files and give structural and geometric data on those ``.xyz`` and ``.traj`` files. 
+
 Examples of the plots that are created are shown below. These include a radial distribution function plot, and number of neighbours bar plot, a text document describing all the number of neighbours found in your cluster with the associated atoms (these can be seen by opening up the xyz file, where the tags describe the index for each atom. These can be coloured by the ASE GUI), and a text document describing all the bonds that are found in your nanocluster/chemical system.
 
 A example radial distribution function plot of a Cu<sub>10</sub>Pd<sub>28</sub> nanocluster: 
