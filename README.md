@@ -16,6 +16,23 @@ Page to cite with work from: *XXX*; XXX;
 
 GeoProps is a program designed to provide information about the geometric properties of individual nanoclusters, including the radial distribution function and the number of neighbours surrounding each atom within the nanocluster. This program utilises modules from the Atomic Simulation Environment (ASE) and As Soon As Possible (ASAP3) packages. 
 
+## Pre-Requisite Programs
+
+GeoProps requires the following programs before it can be used:
+
+* Atomic Simulation Environment (ASE): https://wiki.fysik.dtu.dk/ase/
+* ASAP3: https://wiki.fysik.dtu.dk/asap
+* Packaging
+
+The easiest way to install these is through pip. Type the following two lines into the terminal: 
+
+.. code-block:: bash
+
+	pip3 install --upgrade --user ase packaging
+	pip3 install --upgrade --user asap3==3.11.10
+
+See https://pip.pypa.io/en/stable/installation/ if you do not have pip installed on your computer. 
+
 ## Installation
 
 To install this program on your computer, pop open your terminal, ``cd`` to where you want to place this program on your computer, and clone the program to your computer by typing the following into your terminal:
